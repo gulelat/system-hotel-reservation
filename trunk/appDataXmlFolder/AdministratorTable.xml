@@ -1,0 +1,10 @@
+<table.AdministratorTable>
+  <rows>
+    <entity.Administrator>
+      <name>Vasya</name>
+      <lastname>Pupkin</lastname>
+      <login>admin</login>
+      <password>123321</password>
+    </entity.Administrator>
+  </rows>
+</table.AdministratorTable>

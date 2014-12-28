@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Authorization</title>
+<style>
+.authorization {
+	width: 300px;
+	background: grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -125px 0 0 -200px;
+	border-radius: 20px;
+	border: 4px double black;
+	text-align: center;
+}
+
+body {
+    background: #c7b39b;
+   }
+button {
+ width:85px;
+}
+</style>
+</head>
+<body>
+	<form wicket:id="form">
+		<div class="authorization">
+		<div><label>login</label></div>
+		<input type="text" wicket:id="login"/>
+		<div><label>password</label></div>
+		<input type="password" wicket:id="password"/>
+		
+		<div>
+		<br>
+		<button type="button" wicket:id="enter">Enter</button>
+		<button type="button" wicket:id="registration">Registration</button>
+		<button type="button" wicket:id="admin">Admin</button>
+		</div>
+		<br>
+		</div>
+	</form>
+</body>
+</html>

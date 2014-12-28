@@ -1,0 +1,19 @@
+<table.UserTable>
+  <rows>
+    <entity.User>
+      <name>Semen</name>
+      <lastname>Semenov</lastname>
+      <login>Sema</login>
+      <password>123321</password>
+      <bids>
+        <entity.Bid>
+          <place>23</place>
+          <classApartments>class2</classApartments>
+          <time>3242</time>
+          <review>false</review>
+        </entity.Bid>
+        <entity.Bid reference="../entity.Bid"/>
+      </bids>
+    </entity.User>
+  </rows>
+</table.UserTable>
