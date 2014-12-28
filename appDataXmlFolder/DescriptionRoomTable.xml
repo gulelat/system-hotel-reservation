@@ -1,0 +1,26 @@
+<table.DescriptionRoomTable>
+  <rows>
+    <entity.DescriptionRoom>
+      <name>room1</name>
+      <place>5</place>
+      <classApartments>class1</classApartments>
+      <status>true</status>
+      <user>
+        <name>Semen</name>
+        <lastname>Semenov</lastname>
+        <login>Sema</login>
+        <password>123321</password>
+        <bids>
+          <entity.Bid>
+            <place>23</place>
+            <classApartments>class2</classApartments>
+            <time>3242</time>
+            <review>false</review>
+          </entity.Bid>
+          <entity.Bid reference="../entity.Bid"/>
+        </bids>
+      </user>
+      <price>100000</price>
+    </entity.DescriptionRoom>
+  </rows>
+</table.DescriptionRoomTable>

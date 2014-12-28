@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Private the office</title>
+<style>
+.header {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	width: 100%;
+	background: grey;
+	border: 4px double black;
+}
+
+.block {
+	width: 98%;
+	background: grey;
+	border: 4px double black;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.navigation {
+	width: 300px;
+	left: 0px;
+	background: grey;
+	border: 4px double black;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	position: static;
+}
+
+.hello {
+	font-style: italic;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: grey;
+	border: 4px double black;
+}
+
+li:HOVER {
+	width: 150px;
+	background: white;
+	border: 4px double black;
+}
+
+A {
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: black;
+}
+
+body {
+	background: #c7b39b;
+}
+
+button {
+	width: 85px;
+}
+
+.navigationtext {
+	
+}
+</style>
+</head>
+<body>
+
+	<div class="header">Online shop</div>
+	<div class="block">
+		<div class="hello">
+			<span wicket:id="message">Hello</span>
+		</div>
+		<div class="navigation">
+			<div align="center">
+				<font size="3px"><b>Navigation</b></font>
+			</div>
+			<ul>
+				<li><a href="#" wicket:id="addBid">Add bid</a></li>
+				<li><a href="#" wicket:id="exit">Exit</a></li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

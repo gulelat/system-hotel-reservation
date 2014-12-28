@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Users</title>
+<style>
+.header {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	width: 99%;
+	background: grey;
+	border: 4px double black;
+	position: relative;
+}
+
+.block {
+	width: 98%;
+	background: grey;
+	border: 4px double black;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.box {
+	margin-left: 35%;
+	top: -105px;
+	width: 600px;
+	background: grey;
+	border: 4px double black;
+	position: relative;
+}
+
+.navigation {
+	width: 300px;
+	left: 0px;
+	background: grey;
+	border: 4px double black;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	position: static;
+}
+
+.hello {
+	font-style: italic;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: grey;
+	border: 4px double black;
+}
+
+li:HOVER {
+	width: 150px;
+	background: white;
+	border: 4px double black;
+}
+
+A {
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: black;
+}
+
+body {
+	background: #c7b39b;
+}
+
+button {
+	width: 85px;
+}
+
+.navigationtext {
+	
+}
+</style>
+</head>
+<body>
+
+	<div class="header">Online shop</div>
+	<div class="block">
+		<div class="navigation">
+			<div align="center">
+				<font size="3px"><b>Navigation</b></font>
+			</div>
+			<ul>
+				<li><a href="#" wicket:id="showUsers">Show users</a></li>
+				<li><a href="#" wicket:id="exit">Exit</a></li>
+			</ul>
+		</div>
+		<div class="box">
+			<table border="1">
+		<thead>
+			<tr>
+				<th width="120px"><b>Login</b></th>
+				<th width="120px"><b>Password</b></th>
+				<th width="120px"><b>Name</b></th>
+				<th width="120px">Last name</th>
+				<th width="120px">Operations</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr wicket:id="table-rows">
+				<td width="120px" align="center"><span wicket:id="login"></span></td>
+				<td width="120px" align="center"><span wicket:id="password"></span></td>
+				<td width="120px" align="center"><span wicket:id="name"></span></td>
+				<td width="120px" align="center"><span wicket:id="lastname"></span></td>
+				<td width="120px" align="center"><button type="button" wicket:id="showBids">Show bids</button></td>
+			</tr>
+		</tbody>
+	</table>
+		</div>
+	</div>
+</body>
+</html>
